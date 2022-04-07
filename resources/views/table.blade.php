@@ -270,7 +270,7 @@
 <div class="row">
     <!-- /.col -->
     <div class="col-md-12">
-        <div class="card bg-primary">
+        <div class="card">
 
             <div class="card-body p-0">
 
