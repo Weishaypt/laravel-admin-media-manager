@@ -277,7 +277,7 @@
                         </a>
                     </div>
                     <!-- /.btn-group -->
-                    <label class="btn btn-secondary mb-0 btn"{{-- data-toggle="modal" data-target="#uploadModal"--}}>
+                    <label class="btn btn-primary mb-0 btn"{{-- data-toggle="modal" data-target="#uploadModal"--}}>
                         <i class="fa fa-upload"></i>&nbsp;&nbsp;{{ trans('admin.upload') }}
                         <form action="{{ $url['upload'] }}" method="post" class="file-upload-form d-none" enctype="multipart/form-data" pjax-container>
                             <input type="file" name="files[]" class="hidden file-upload" multiple>
@@ -287,13 +287,13 @@
                     </label>
 
                     <!-- /.btn-group -->
-                    <a class="btn btn-secondary btn" data-toggle="modal" data-target="#newFolderModal">
+                    <a class="btn btn-primary btn" data-toggle="modal" data-target="#newFolderModal">
                         <i class="fa fa-folder"></i>&nbsp;&nbsp;{{ trans('admin.new_folder') }}
                     </a>
 
                     <div class="btn-group">
-                        <a href="{{ route('media-index', ['path' => $url['path'], 'view' => 'table']) }}" class="btn btn-secondary active"><i class="fa fa-list"></i></a>
-                        <a href="{{ route('media-index', ['path' => $url['path'], 'view' => 'list']) }}" class="btn btn-secondary"><i class="fa fa-th"></i></a>
+                        <a href="{{ route('media-index', ['path' => $url['path'], 'view' => 'table']) }}" class="btn btn-primary active"><i class="fa fa-list"></i></a>
+                        <a href="{{ route('media-index', ['path' => $url['path'], 'view' => 'list']) }}" class="btn btn-primary"><i class="fa fa-th"></i></a>
                     </div>
 
                     {{--<form action="{{ $url['index'] }}" method="get" pjax-container>--}}
@@ -301,7 +301,7 @@
                         <input type="text" name="path" class="form-control pull-right" value="{{ '/'.trim($url['path'], '/') }}">
 
                         <div class="input-group-btn">
-                            <button type="submit" class="btn btn-secondary"><i class="fa fa-arrow-right"></i></button>
+                            <button type="submit" class="btn btn-primary"><i class="fa fa-arrow-right"></i></button>
                         </div>
                     </div>
                     {{--</form>--}}
@@ -341,7 +341,7 @@
                               {{ $item['size'] }}&nbsp;
 
                                 <div class="btn-group btn-group-xs pull-right">
-                                    <button type="button" class="btn btn-secondary btn-xs dropdown-toggle" data-toggle="dropdown">
+                                    <button type="button" class="btn btn-primary btn-xs dropdown-toggle" data-toggle="dropdown">
                                         <span class="caret"></span>
                                         <span class="sr-only">Toggle Dropdown</span>
                                     </button>
@@ -386,7 +386,7 @@
                     <input type="hidden" name="path"/>
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-primary btn-sm">Submit</button>
                 </div>
             </form>
@@ -407,7 +407,7 @@
                 </div>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -429,7 +429,7 @@
                     {{ csrf_field() }}
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Close</button>
                     <button type="submit" class="btn btn-primary btn-sm">Submit</button>
                 </div>
             </form>
