@@ -6,6 +6,7 @@ use Encore\Admin\Facades\Admin;
 use Encore\Admin\Layout\Content;
 use Illuminate\Http\Request;
 use Illuminate\Routing\Controller;
+use Illuminate\Support\Facades\Log;
 
 class MediaController extends Controller
 {
@@ -63,7 +64,9 @@ class MediaController extends Controller
 
     public function delete(Request $request)
     {
+        Log::info(json_encode($request->get('files')));
         $files = $request->get('files');
+
 
         $manager = new MediaManager();
 

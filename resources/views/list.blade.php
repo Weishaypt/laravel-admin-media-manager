@@ -233,7 +233,7 @@
                             method: 'delete',
                             url: '{{ $url['delete'] }}',
                             data: {
-                                'files[]': files,
+                                'files': files,
                                 _token:LA.token
                             },
                             success: function (data) {

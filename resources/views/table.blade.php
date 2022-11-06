@@ -62,7 +62,7 @@
                             method: 'delete',
                             url: '{{ $url['delete'] }}',
                             data: {
-                                'files[]':[path],
+                                'files':[path],
                                 _token:LA.token
                             },
                             success: function (data) {

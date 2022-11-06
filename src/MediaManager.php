@@ -104,6 +104,9 @@ class MediaManager extends Extension
      */
     protected function getFullPath($path)
     {
+        if(is_null($path)) {
+            throw new \Exception('Incorrect path');
+        }
         $fullPath = $this->storage->path($path);
         if (strstr($fullPath, '..')) {
             throw new \Exception('Incorrect path');
